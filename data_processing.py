@@ -2,6 +2,7 @@ import tensorflow as tf
 import cv2, os
 import numpy as np
 from random import shuffle
+import copy
 
 #####
 #Training setting
