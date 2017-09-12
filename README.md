@@ -18,7 +18,7 @@ The aim of this project is to predict the size of the bounding box and orientati
 2. Download the KITTI object detection dataset, calib and label (http://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=2d).
 3. Download the weights file (vgg_16.ckpt).
    ```Shell
-   cd $3D-deepbox_ROOT
+   cd $3D-Deepbox_ROOT
    wget http://download.tensorflow.org/models/vgg_16_2016_08_28.tar.gz
    tar zxvf vgg_16_2016_08_28.tar.gz
    ```
@@ -47,7 +47,7 @@ The aim of this project is to predict the size of the bounding box and orientati
 
 ### Visualization
    ```Shell
-   cd ./3D-deepbox/visualization
+   cd ./3D-Deepbox/visualization
    run run_demo.m
    ```
 
