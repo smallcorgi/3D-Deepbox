@@ -45,6 +45,12 @@ The aim of this project is to predict the size of the bounding box and orientati
    ./kitti_eval/evaluate_object_3d_offline [ground_truth_path] [predict_path]
    ```
 
+### Visualization
+   ```Shell
+   cd ./3D-deepbox/visualization
+   run run_demo.m
+   ```
+
 ## References
 1. https://github.com/shashwat14/Multibin
 2. https://github.com/experiencor/didi-starter/tree/master/simple_solution

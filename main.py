@@ -40,7 +40,7 @@ def parse_args():
     parser.add_argument('--image',dest = 'image',help='Image path')
     parser.add_argument('--label',dest = 'label',help='Label path')
     parser.add_argument('--box2d',dest = 'box2d',help='2D detection path')
-    parser.add_argument('--output',dest = 'output',help='Output path', default = './Result/')
+    parser.add_argument('--output',dest = 'output',help='Output path', default = './validation/result_2/')
     parser.add_argument('--model',dest = 'model')
     parser.add_argument('--gpu',dest = 'gpu',default= '0')
     args = parser.parse_args()
