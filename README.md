@@ -1,6 +1,6 @@
 # 3D Bounding Box Estimation Using Deep Learning and Geometry
 
-A Tensorflow implementation of the paper ["3D Bounding Box Estimation Using Deep Learning and Geometry"] (https://arxiv.org/abs/1612.00496). by Fu-Hsiang Chan
+A Tensorflow implementation of the paper: Mousavian, Arsalan, et al. [3D Bounding Box Estimation Using Deep Learning and Geometry](https://arxiv.org/abs/1612.00496) by Fu-Hsiang Chan.
 
 The aim of this project is to predict the size of the bounding box and orientation of the object in 3D space from a single two dimensional image.
  
@@ -12,9 +12,9 @@ The aim of this project is to predict the size of the bounding box and orientati
 
 ## Installation
 1. Clone the repository
-  ```Shell
-  git clone https://github.com/smallcorgi/3D-Deepbox.git
-  ```
+   ```Shell
+   git clone https://github.com/smallcorgi/3D-Deepbox.git
+   ```
 2. Download the KITTI object detection dataset, calib and label (http://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=2d).
 3. Download the weights file (vgg_16.ckpt).
    ```Shell
