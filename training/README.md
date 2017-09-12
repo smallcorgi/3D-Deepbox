@@ -1,5 +1,5 @@
 ```
-3D-deepbox/training 
+3D-Deepbox/training 
 └─── image_2
     │   *.PNG (Image files, ex:000000.png)
 └─── label_2
