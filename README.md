@@ -26,7 +26,7 @@ The aim of this project is to predict the size of the bounding box and orientati
    ```Shell
    g++ -O3 -DNDEBUG -o ./kitti_eval/evaluate_object_3d_offline ./kitti_eval/evaluate_object_3d_offline.cpp
    ```
-5. [KITTI train/val split used in 3DOP/Mono3D/MV3D] (https://xiaozhichen.github.io/files/mv3d/imagesets.tar.gz)
+5. [KITTI train/val split used in 3DOP/Mono3D/MV3D](https://xiaozhichen.github.io/files/mv3d/imagesets.tar.gz)
 
 ## Usage
 
