@@ -1,5 +1,5 @@
 ```
-3D-deepbox/validation 
+3D-Deepbox/validation 
 └─── image_2
     │   *.PNG (Image files, ex:000000.png)
 └─── label_2
