@@ -248,7 +248,9 @@ def test(model, image_dir, box2d_loc, box3d_loc):
                     angle_offset = angle_offset - (2.*np.pi)
 
                 line[3] = str(angle_offset)
-
+                 
+                line[-1] = angle_offset +np.arctan(float(line[11]) / float(line[13]))
+                
                 # Transform regressed dimension
                 if line[0] in VEHICLES:
                     dims = dims_avg[line[0]] + prediction[0][0]
@@ -256,7 +258,7 @@ def test(model, image_dir, box2d_loc, box3d_loc):
                     dims = dims_avg['Car'] + prediction[0][0]
 
                 line = line[:8] + list(dims) + line[11:]
-
+                
                 # Write regressed 3D dim and oritent to file
                 line = ' '.join([str(item) for item in line]) +' '+ str(np.max(prediction[2][0]))+ '\n'
                 box3d.write(line)
