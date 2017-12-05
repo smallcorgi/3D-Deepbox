@@ -75,23 +75,24 @@ def parse_annotation(label_dir, image_dir):
             orientation[anchor[0]] = np.array([np.cos(anchor[1]), np.sin(anchor[1])])
             confidence[anchor[0]] = 1.
 
-            confidence = confidence / np.sum(confidence)
+        confidence = confidence / np.sum(confidence)
 
-            obj['orient'] = orientation
-            obj['conf'] = confidence
+        obj['orient'] = orientation
+        obj['conf'] = confidence
 
-            # Fix orientation and confidence for flip
-            orientation = np.zeros((BIN,2))
-            confidence = np.zeros(BIN)
+        # Fix orientation and confidence for flip
+        orientation = np.zeros((BIN,2))
+        confidence = np.zeros(BIN)
 
-            anchors = compute_anchors(2.*np.pi - obj['new_alpha'])
-            for anchor in anchors:
-                orientation[anchor[0]] = np.array([np.cos(anchor[1]), np.sin(anchor[1])])
-                confidence[anchor[0]] = 1
-            confidence = confidence / np.sum(confidence)
+        anchors = compute_anchors(2.*np.pi - obj['new_alpha'])
+        for anchor in anchors:
+            orientation[anchor[0]] = np.array([np.cos(anchor[1]), np.sin(anchor[1])])
+            confidence[anchor[0]] = 1
+            
+        confidence = confidence / np.sum(confidence)
 
-            obj['orient_flipped'] = orientation
-            obj['conf_flipped'] = confidence
+        obj['orient_flipped'] = orientation
+        obj['conf_flipped'] = confidence
             
     return all_objs
 
