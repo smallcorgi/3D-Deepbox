@@ -48,17 +48,29 @@ The aim of this project is to predict the size of the bounding box and orientati
 ### Result
 
 car_detection AP: 100.000000 100.000000 100.000000
+
 car_orientation AP: 98.482552 95.809959 91.975380
+
 pedestrian_detection AP: 100.000000 100.000000 100.000000
+
 pedestrian_orientation AP: 76.835083 74.943863 71.997620
+
 cyclist_detection AP: 100.000000 100.000000 100.000000
+
 cyclist_orientation AP: 89.908524 81.029915 79.436340
+
 car_detection_ground AP: 90.743927 85.268692 76.673523
+
 pedestrian_detection_ground AP: 97.148033 98.034355 98.376617
+
 cyclist_detection_ground AP: 82.906242 82.897720 75.573006
+
 Eval 3D bounding boxes
+
 car_detection_3d AP: 84.500374 84.358612 75.764938
+
 pedestrian_detection_3d AP: 96.662766 97.702209 89.280357
+
 cyclist_detection_3d AP: 80.711548 81.337944 74.269547
 
 
