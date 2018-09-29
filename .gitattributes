@@ -2,3 +2,5 @@
 *.css linguist-language=python
 *.html linguist-language=python
 *.cpp linguist-language=python
+demo_model.data-00000-of-00001 filter=lfs diff=lfs merge=lfs -text
+demo_model/demo_model.data-00000-of-00001 filter=lfs diff=lfs merge=lfs -text
