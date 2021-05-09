@@ -9,8 +9,7 @@ import sys
 import argparse
 from tqdm import tqdm
 
-#####
-#Training setting
+
 
 BIN, OVERLAP = 2, 0.1
 W = 1.
